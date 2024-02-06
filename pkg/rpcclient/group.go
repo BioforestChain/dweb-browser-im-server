@@ -201,6 +201,7 @@ func (g *GroupRpcClient) GetGroupMemberCache(
 	return resp.Member, nil
 }
 
+// TODO
 func (g *GroupRpcClient) DismissGroup(ctx context.Context, groupID string) error {
 	_, err := g.Client.DismissGroup(ctx, &group.DismissGroupReq{
 		GroupID:      groupID,
